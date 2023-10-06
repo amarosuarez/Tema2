@@ -35,35 +35,11 @@ public class Ejercicio09 {
 				if (elec1 == elec2) {
 					// Ambos eligen lo mismo = empate
 					System.out.println("EMPATE");
-				} else if (elec1 == 1) { 
-					// Jugador 1 elige piedra
-					if (elec2 == 2) {
-						// Jugador 2 elige papel = gana
-						System.out.println("GANA JUGADOR 2");
-					} else {
-						// Jugador 2 elige tijeras = pierde
-						System.out.println("GANA JUGADOR 1");
-					}
-				} else if (elec1 == 2) {
-					// Jugador 1 elige papel
-					if (elec2 == 1) {
-						// Jugador 2 elige piedra = pierde
-						System.out.println("GANA JUGADOR 1");
-					} else {
-						// Jugador 2 elige tijeras = gana
-						System.out.println("GANA JUGADOR 2");
-					}
+				} else if ((elec1 == 1 && elec2 == 3) || (elec1 == 2 && elec2 == 1) || (elec1 == 3 && elec2 == 1)) { 
+					System.out.println("GANA JUGADOR 1");
 				} else {
-					// Jugador 1 elige tijeras
-					if (elec2 == 1) {
-						// Jugador 2 elige piedra = gana
-						System.out.println("GANA JUGADOR 2");
-					} else {
-						// Jugador 2 elige papel = pierde
-						System.out.println("GANA JUGADOR 1");
-					}
+					System.out.println("GANA JUGADOR 2");
 				}
-				
 			}
 		}
 		
