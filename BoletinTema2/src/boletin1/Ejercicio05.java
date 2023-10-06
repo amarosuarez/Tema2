@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio05 {
 
 	public static void main(String[] args) {
 		// Definimos las variables donde se almacenarán los números introducidos por el usuario

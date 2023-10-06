@@ -2,7 +2,7 @@ package boletin1;
 
 import java.util.Scanner;
 
-public class Ejercicio8 {
+public class Ejercicio08 {
 
 	public static void main(String[] args) {
 		// Definimos la variable donde se almacenará la nota
