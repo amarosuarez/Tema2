@@ -15,9 +15,12 @@ public class Ejercicio03 {
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 		
-		// Le pedimos un número al usuario y lo guardamos
-		System.out.println("Introduzca un número");
-		n = sc.nextInt();
+		// Pedimos un número positivo y mayor que 1
+		do {
+			// Le pedimos un número al usuario y lo guardamos
+			System.out.println("Introduzca un número positivo y mayor o igual que 1");
+			n = sc.nextInt();
+		} while (n < 1);
 		
 		// Bucle que suma los números comprendidos entre 1 y n
 		do {

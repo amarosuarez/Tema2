@@ -10,7 +10,7 @@ public class Ejercicio04 {
 		// Variable que almacenará el resultado de la multiplicación
 		int mult;
 		// Variable donde se almacenará el contador
-		int cont = 0;
+		int cont = 1;
 		
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);

@@ -12,34 +12,37 @@ public class Ejercicio05 {
 		final int IGUAL = 3;
 		
 		// Variable donde se almacenará el número random
-		int rand = 1;
+		int rand;
 		// Variable donde se almacenará la respuesta del usuario
 		int resp = 0;
-		int ant = 0;
+		// Variables donde se almacenarán el mínimo y el máximo
+		int min = 1;
+		int max = 101;
 		
 		// Creamos el Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
+		
 		// Creamos el Random
 		Random rd = new Random();
 		
 		System.out.println("1 para MENOR, 2 para MAYOR, 3 para IGUAL");
 		
+		// Mostramos un número aleatorio hasta adivinar el número del usuario
 		do {
-			rand = rd.nextInt(1,101);
-			
-			} else if (resp == 1) {
-				rand = rd.nextInt(ant)+1;
-			} else {
-				rand = rd.nextInt(100-ant+1)+ant;
-			}
-			
-			ant = rand;
-			System.out.println("He pensado en el " + rand + " ¿estoy en lo correcto? ");
+			rand = rd.nextInt(min,max);
+			System.out.println("He pensado en el " + rand + ", ¿es correcto?");
 			resp = sc.nextInt();
 			
+			// Según la respuesta del usuario ajustamos el máximo o el mínimo
+			if (resp == MENOR) {
+				max = rand;
+			} else if (resp == MAYOR) {
+				min = rand;
+			}
 			
 		} while(resp != IGUAL);
 		
+		// Mostramos el mensaje por pantalla
 		System.out.println("¡Lo conseguí!");
 		
 		// Cerramos el Scanner
