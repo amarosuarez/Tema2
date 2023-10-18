@@ -61,8 +61,10 @@ public class Ejercicio08 {
 		} while(!(tirada.equalsIgnoreCase("UNO") || tirada.equalsIgnoreCase("DOS") || tirada.equalsIgnoreCase("TRES")
 				|| tirada.equalsIgnoreCase("CUATRO") || tirada.equalsIgnoreCase("CINCO") || tirada.equalsIgnoreCase("SEIS")));		
 		
+		// Realizamos la suma
 		suma = valorTirada1+valorTirada2;
 		
+		// Mostramos la suma por pantalla
 		System.out.println("El valor de la suma es: " + suma);
 		
 		// Cerramos el Scanner
