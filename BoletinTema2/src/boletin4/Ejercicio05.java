@@ -37,10 +37,10 @@ public class Ejercicio05 {
 			if (resp == MENOR) {
 				max = rand;
 			} else if (resp == MAYOR) {
-				min = rand;
+				min = rand + 1;
 			}
 			
-		} while(resp != IGUAL);
+		} while(resp != IGUAL && min != max);
 		
 		// Mostramos el mensaje por pantalla
 		System.out.println("¡Lo conseguí!");

@@ -28,6 +28,7 @@ public class Ejercicio07 {
 			opcion = sc.next();
 			
 			// Switch para realizar la opción seleccionada
+			
 			switch (opcion) {
 				case "A":
 					result = num1+num2;
@@ -52,7 +53,7 @@ public class Ejercicio07 {
 					System.out.println("Opción no válida");
 			}
 			
-		} while(!opcion.equals("E"));
+		} while(!opcion.equalsIgnoreCase("E"));
 		
 		// Cerramos el Scanner
 		sc.close();
