@@ -13,6 +13,7 @@ public class Ejercicio08 {
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 		
+		// Bucle para comprobar las alturas introducidas
 		while (altura != -1) {
 			System.out.println("Introduce una altura (Usa -1 para salir)");
 			altura = sc.nextInt();
@@ -20,6 +21,7 @@ public class Ejercicio08 {
 			masAlta = masAlta > altura ? masAlta : altura;
 		}
 		
+		// Mostramos la altura introducida mas alta
 		System.out.println("La altura introducida más alta es " + masAlta);
 		
 		// Cerramos el Scanner
