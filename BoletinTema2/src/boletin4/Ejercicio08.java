@@ -19,47 +19,40 @@ public class Ejercicio08 {
 		
 		// Le pedimos al usuario la primera tirada y lo convertimos a número
 		do {
-			System.out.println("¿Cuál ha sido tu tirada? Introducelo en texto (Uno, dos...)");
-			tirada = sc.next();
+			System.out.println("¿Cuál ha sido tu tirada? Introducelo en texto (UNO, DOS...)");
+			tirada = sc.nextLine();
 			
-			if (tirada.equalsIgnoreCase("UNO")) {
-				valorTirada1 = 1;
-			} else if (tirada.equalsIgnoreCase("DOS")) {
-				valorTirada1 = 2;
-			} else if (tirada.equalsIgnoreCase("TRES")) {
-				valorTirada1 = 3;
-			} else if (tirada.equalsIgnoreCase("CUATRO")) {
-				valorTirada1 = 4;
-			} else if (tirada.equalsIgnoreCase("CINCO")) {
-				valorTirada1 = 5;
-			} else if (tirada.equalsIgnoreCase("SEIS")) {
-				valorTirada1 = 6;
+			switch(tirada) {
+				case "UNO" -> valorTirada1 = 1;
+				case "DOS" -> valorTirada1 = 2;
+				case "TRES" -> valorTirada1 = 3;
+				case "CUATRO" -> valorTirada1 = 4;
+				case "CINCO" -> valorTirada1 = 5;
+				case "SEIS" -> valorTirada1 = 6;
+				default -> System.out.println("Valor incorrecto (Prueba a usar mayúsculas)");
 			}
 			
-		} while(!(tirada.equalsIgnoreCase("UNO") || tirada.equalsIgnoreCase("DOS") || tirada.equalsIgnoreCase("TRES")
-				|| tirada.equalsIgnoreCase("CUATRO") || tirada.equalsIgnoreCase("CINCO") || tirada.equalsIgnoreCase("SEIS")));
+			
+		} while(!(tirada.equals("UNO") || tirada.equals("DOS") || tirada.equals("TRES")
+				|| tirada.equals("CUATRO") || tirada.equals("CINCO") || tirada.equals("SEIS")));
 		
 		// Le pedimos al usuario la segunda tirada y lo convertimos a número
 		do {
-			System.out.println("¿Cuál ha sido tu tirada? Introducelo en texto (Uno, dos...)");
-			tirada = sc.next();
+			System.out.println("¿Cuál ha sido tu tirada? Introducelo en texto (UNO, DOS...)");
+			tirada = sc.nextLine();
 			
-			if (tirada.equalsIgnoreCase("UNO")) {
-				valorTirada2 = 1;
-			} else if (tirada.equalsIgnoreCase("DOS")) {
-				valorTirada2 = 2;
-			} else if (tirada.equalsIgnoreCase("TRES")) {
-				valorTirada2 = 3;
-			} else if (tirada.equalsIgnoreCase("CUATRO")) {
-				valorTirada2 = 4;
-			} else if (tirada.equalsIgnoreCase("CINCO")) {
-				valorTirada2 = 5;
-			} else if (tirada.equalsIgnoreCase("SEIS")) {
-				valorTirada2 = 6;
+			switch(tirada) {
+				case "UNO" -> valorTirada2 = 1;
+				case "DOS" -> valorTirada2 = 2;
+				case "TRES" -> valorTirada2 = 3;
+				case "CUATRO" -> valorTirada2 = 4;
+				case "CINCO" -> valorTirada2 = 5;
+				case "SEIS" -> valorTirada2 = 6;
+				default -> System.out.println("Valor incorrecto (Prueba a usar mayúsculas)");
 			}
 			
-		} while(!(tirada.equalsIgnoreCase("UNO") || tirada.equalsIgnoreCase("DOS") || tirada.equalsIgnoreCase("TRES")
-				|| tirada.equalsIgnoreCase("CUATRO") || tirada.equalsIgnoreCase("CINCO") || tirada.equalsIgnoreCase("SEIS")));		
+		} while(!(tirada.equals("UNO") || tirada.equals("DOS") || tirada.equals("TRES")
+				|| tirada.equals("CUATRO") || tirada.equals("CINCO") || tirada.equals("SEIS")));		
 		
 		// Realizamos la suma
 		suma = valorTirada1+valorTirada2;
